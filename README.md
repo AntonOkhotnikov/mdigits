@@ -39,11 +39,11 @@ tensorboard --logdir <exp_path>
 
 |                                 | Model params, M | Est. fp32 model size, Mb |   Four testing sentences decoding output   |
 |:-------------------------------:|:---------------:|:------------------------:|:------------------------------------------:|
-|        quartznet5x3.yaml        |       4.6       |           18.49          |       ['89786', '33*6', '35', '183']       |
-|     quartznet5x3_nvidia.yaml    |       6.4       |           25.56          |    ['89*86', '33*760', '39*75', '18*0']    |
-|        quartznet_5x1.yaml       |       2.0       |           7.97           |    ['897*688', '332*6', '309*', '183*0']   |
-|      quartznet_5x1_aug.yaml     |       2.0       |           7.97           |    ['897*8', '32*7', '309*75', '183*0']    |
-| quartznet_5x1_aug.yaml (tuned*) |       2.0       |           7.97           | ['897*868', '332*6', '309*755', '183*003'] |
+|        quartznet5x3.yaml        |       4.6       |           18.49          |       ['89786', '33\*6', '35', '183']       |
+|     quartznet5x3_nvidia.yaml    |       6.4       |           25.56          |    ['89\*86', '33\*760', '39\*75', '18\*0']    |
+|        quartznet_5x1.yaml       |       2.0       |           7.97           |    ['897\*688', '332\*6', '309\*', '183\*0']   |
+|      quartznet_5x1_aug.yaml     |       2.0       |           7.97           |    ['897\*8', '32\*7', '309\*75', '183\*0']    |
+| quartznet_5x1_aug.yaml (tuned*) |       2.0       |           7.97           | ['897\*868', '332\*6', '309\*755', '183\*003'] |
 |       oracle transcription      |        -        |             -            |  ['896867', '332763', '309758', '183037']  |
 
 * tuned - expanded val/test sets, limited minimal lr for scheduler, trained for more epochs, higher probs of augmentations. See `conf/quartznet_5x1_aug.yaml`
@@ -65,11 +65,11 @@ For full description please see `conf/quartznet_5x1_aug.yaml`
 * `speed` - speed perturbation (changes voice of a speaker)
 
 * `impulse` (2015 files 1-second length):
-  * [BUT_RIRs](https://speech.fit.vutbr.cz/software/but-speech-fit-reverb-database) - real room impulse responses
+    * [BUT_RIRs](https://speech.fit.vutbr.cz/software/but-speech-fit-reverb-database) - real room impulse responses
 
 * `noise` (10120 files 2-seconds length):
-  * [DCASE](http://dcase.community/challenge2017/task-sound-event-detection-in-real-life-audio) - audio events dataset
-  * [DEMAND](https://zenodo.org/record/1227121#.YOCiOzpRVH4) - db of acoustic noises
+    * [DCASE](http://dcase.community/challenge2017/task-sound-event-detection-in-real-life-audio) - audio events dataset
+    * [DEMAND](https://zenodo.org/record/1227121#.YOCiOzpRVH4) - db of acoustic noises
 
 * `gain` - volume perturbation
 
@@ -79,7 +79,7 @@ For full description please see `conf/quartznet_5x1_aug.yaml`
 
 
 ## TODO:
-- [ ] Matcch fp32 and int8 models outputs
+- [ ] Macch fp32 and int8 models outputs
 
 
 ## References used
