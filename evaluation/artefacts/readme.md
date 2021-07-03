@@ -1,0 +1,1 @@
+Artefacts from best training checkpoint
