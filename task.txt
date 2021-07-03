@@ -1,0 +1,21 @@
+🔢 Task description
+Your task is to train a model that recognizes a number pronounced in an input audio clip.
+💽 Data
+You are given the training dataset that consists of 9,000 audio clips. Each clip contains a number between 0 (inclusive) and 1,000,000 (exclusive) that is pronounced by male or female voice.
+In the dataset folder you will find a train.csv file that contains the following columns:
+path - path to an audio file in wav format
+gender - a gender of the voice that pronounced this audio clip
+number - a number that was pronounced
+⚠️ Only 3,000 audio clips are labeled.
+📈 Evaluation
+We will measure character error rate (CER) between the predictions of your model and the ground truth numbers. The lower CER, the better.
+⚠️ The test set contains noisy samples recorded by different people.
+📦 Requirements
+You must provide a script that takes a csv file with paths to audio clips and produce a new csv file with your model predictions. That file must contain two columns: path and number.
+
+Model size should be not greater than 2 MB.
+
+We expect you to create a GitHub repo with all your code (python + pytorch), a README.md file that contains links to a model checkpoint as well as a detailed description of your approach and  how to use it.
+
+We understand that you are a busy person and likely will not want to spend a lot of time working on this task. But we encourage you to implement an efficient pipeline, that's easy to reproduce and pick up.
+
