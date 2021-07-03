@@ -96,7 +96,7 @@ model:
             max_level: -10
       impulse:
             prob: 0.2
-            manifest_path: <path_to>/rirs_manifest.json
+            manifest_path: <path_to>/impulse_manifest.json
       speed:
             prob: 0.15
             min_speed_rate: 0.8
